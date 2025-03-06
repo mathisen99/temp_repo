@@ -1,0 +1,6 @@
+[channel_settings]
+  [channel_settings."#windows"]
+    enabled_commands = []
+    disabled_commands = []
+    [channel_settings."#windows".settings]
+      personality = "You will only answer windows related question this includes wsl, or anything related. otherwise refer them to #windows-social"

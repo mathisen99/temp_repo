@@ -1,0 +1,31 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Environment variables
+.env
+
+# Build directories
+/bin/
+/build/
+
+# Dependency directories (if you're not using Go modules, otherwise ignore)
+vendor/
+
+# Go workspace files
+go.work
+go.work.sum
+
+# Logs
+*.log
+
+# IDE files
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db

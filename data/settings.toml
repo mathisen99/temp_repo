@@ -1,0 +1,8 @@
+owner_verified = true
+owner_passhash = "$argon2id$v=19$m=65536,t=3,p=2$6ESlwwRrUcc+VO9uZC6qjw==$jPAq8B4+SAJinqTj1WGQSYsn2twhdHZZP4wwzvUNF9w="
+owner_hostmask = "Mathisen!~mathisen@about/windows/staff/mathisen"
+hostmask_levels = true
+
+[[hostmasks]]
+  hostmask = "Mathisen!~mathisen@about/windows/staff/mathisen"
+  level = 4

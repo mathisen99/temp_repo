@@ -1,0 +1,30 @@
+version: '2.4'
+services:
+  python:
+    image: python-math-libs  # Use locally built image
+    command: tail -f /dev/null
+    volumes:
+      - ./script.py:/tmp/script.py
+    working_dir: /tmp
+    mem_limit: 128m
+    cpu_quota: 50000
+    cpu_period: 100000
+    user: nonrootuser
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    network_mode: none
+    
+  # Bot service commented out - uncomment and customize when deploying
+  # bot:
+  #   build: .
+  #   restart: unless-stopped
+  #   volumes:
+  #     - ./data:/app/data
+  #     - ./logs:/app/logs
+  #     - ./plugins:/app/plugins
+  #   environment:
+  #     - OPENAI_API_KEY=your_openai_api_key
+  #     - GOOGLE_API_KEY=your_google_api_key
+  #     - GOOGLE_SEARCH_ENGINE_ID=your_search_engine_id
